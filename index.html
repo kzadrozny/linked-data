@@ -6,10 +6,10 @@
 <!-- Insert presentation title below -->
 		<title>Presentation Title</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/ucreveal.css">
-
+		<link rel="stylesheet" href="//identity.uchicago.edu/c/fonts/proximanova.css">
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -42,20 +42,36 @@
 					<h2>Linked Data</h2>
 					<h3>Brainstorming Session</h3>
 					<p>
-						<small>John Jung</a> / Kathy Zadrozny</small>
+						<small>John Jung / Kathy Zadrozny</small>
 					</p>
 				</section>
 
 				<section>
 					<h2>Agenda</h2>
-					<p>
-						<ul>
-							<li>Linked Data project examples</li>
-							<li>Overview of Brainstorming</li>
-							<li>Groups create sample deliverables</li>
-							<li>Value and effort plotting</li>
-						</ul>
-					</p>
+					<table class="table table-striped">
+						<tbody>
+				            <tr>
+				              <td><strong>10:00-10:10</strong> <em>(10 min)</em></td>
+				              <td>Linked Data Environment</td>
+				            </tr>
+				            <tr>
+				              <td><strong>10:10-10:50</strong> <em>(45 min)</em></td>
+				              <td>Generating Ideas</td>
+				            </tr>
+				            <tr>
+				              <td><strong>10:50-11:25</strong> <em>(5 min)</em></td>
+				              <td>How to Evaluate Ideas Using Value and Effort</td>
+				            </tr>
+				            <tr>
+				              <td><strong>10:50-11:25</strong> <em>(25 min)</em></td>
+				              <td>Value and Effort Plotting</td>
+				            </tr>
+				            <tr>
+				              <td><strong>11:25-11:30</strong> <em>(5 min)</em></td>
+				              <td>Homework</td>
+				            </tr>
+			        </tbody>
+                    </table>
 				</section>
 
 				<section>
@@ -95,19 +111,34 @@ Ensemble uses linked data to crowdsource the process of transcribing documents. 
 
 
 			<!-- Start Group Session -->
-				<section data-background="#dddddd">
-				<h2>Group Tasks</h2>
+				<section>
+				<h2>Generate Ideas</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>Idea Name</li>
+						<li>Description</li>
+						<li>Target Audience(s)</li>
+						<li>Responsible Department(s)</li>
+						<li>Technically, how?</li>
+						<li>Main Takeaway</li>
 					</ul>
 				</section>
 
-				<section data-background="#dddddd">
+								<section>
+				<h2>Generate Ideas</h2>
+					<ul>
+						<li>Idea Name:<br/><strong>Chopin Awesome Idea</strong></li>
+						<li>Description:<br/><strong>Transfer metadata into linked data for local data maangement</strong></li>
+						<li>Target Audience(s):<br/><strong>Graduate music dept.</strong></li>
+						<li>Responsible Department(s):<br/><strong>Music Bibliographer</strong></li>
+						<li>Technically, how:<br/><strong>RDF.</strong></li>
+						<li>Main Takeaway:<br/><strong>Encapsualted project to get our feet wet.</strong></li>
+					</ul>
+				</section>
+
+				<section>
 					<h2>Potential Projects</h2>
-					<ul style="font-size: 1.1em;">
+					<div class="col-xs-6">
+					<ul>
 						<li>Chopin Early Editions</li>
 						<li>Targeted Searches for Reference</li>
 						<li>Connections between dissertations</li>
@@ -115,6 +146,10 @@ Ensemble uses linked data to crowdsource the process of transcribing documents. 
 						<li>Archival Photofiles</li>
 						<li>American Environmental Photographs</li>
 						<li>Speculum</li>
+					</ul>
+				</div>
+					<div class="col-xs-6">
+					<ul>
 						<li>Manage Authorities (Local)</li>
 						<li>Add linked data to University-produced video</li>
 						<li>Add identifiers to bib bib records</li>
@@ -122,31 +157,81 @@ Ensemble uses linked data to crowdsource the process of transcribing documents. 
 						<li>Serendipitous discovery in user interfaces</li>
 						<li>Mint identifiers of local interest and publish</li>
 					</ul>
+				</div>
 				</section>
 
 				<section>
-					Insert slides for "how to" on Value/Effort
-				</section>
-				
-
-				<section data-background="#dddddd">
-					<h2>Factors for Evaluation</h2>
-					<ul style="font-size: 1.1em;">
-						<li>Who is willing to commit?</li>
-						<li>Who has domain expertise?</li>
-						<li>Scope of expertise that we will need to develop</li>
-						<li>Technologies involved</li>
-						<li>Expected usage and effect on patrons</li>
-						<li>How much can we reuse vs must create new?</li>
-						<li>Reusability/transferability to other projects</li>
-						<li>Where is there already an ecosystem we can plug into?</li>
+				<h2>Brainstorming: 45mins</h2>
+					<ul>
+						<li>Idea Name</li>
+						<li>Description</li>
+						<li>Target Audience(s)</li>
+						<li>Responsible Department(s)</li>
+						<li>Technically, how?</li>
+						<li>Main Takeaway</li>
 					</ul>
 				</section>
 
+				<section>
+                    <h2>Prioritize Ideas</h2>
+					
+                    <aside class="notes">
+            <p>Let's merge the two groups' pile of ideas and we prioritize our projects. One of the simplest ways to do this is to start
+arranging your ideas in two dimensions.</p>
+                    </aside>
+                </section>
+
+        <section>
+            <img class="stretch" src="images/effort-reward-post-its.png" style="border: none; box-shadow: none;"/>
+          <aside class="notes">
+            <p>You can pick different axis, but here we're
+choosing effort and reward. To start, label four post-it notes "low effort", "high effort",
+"low reward" and "high reward".</p>
+          </aside>
+        </section>
+
+        <section>
+            <img class="stretch" src="images/effort-reward-post-its-on-table.png" style="border: none; box-shadow: none;"/>
+            <aside class="notes">
+              <p>Place them on your table like this.</p>
+            </aside>
+        </section>
+
+        <section>
+            <img class="stretch" src="images/effort-reward-post-its-with-pages.png" style="border: none; box-shadow: none;"/>
+            
+            <aside class="notes">
+              <p>Now, as a group, think about how you'd place the ideas you generated
+into this space. Think roughly about how hard it would be to execute an idea and how
+much value people would get from it. Take 10 minutes to place the ideas where
+they make sense in this space.</p>
+            </aside>
+        </section>
+				
+
+				<section>
+					<h2>Factors for Evaluation</h2>
+					<ul>
+						<li>Organizational value (match with Library strategy)</li>
+						<li>Technical value (reusability to other projects)</li>
+						<li>Who is willing to commit?</li>
+						<li>Is there already and ecosystem to plug into?</li>
+						<li>How much can we reuse versus must create new?</li>
+					</ul>
+				</section>
+
+       <section>
+          <h2>Homework</h2>
+          <ul>
+			<li>Choose a leftover project</li>
+			<li>Generate ideas with deliverables</li>
+			<li>Bring ideas to next meeting</li>
+		</ul>
+        </section>
 
 			<!-- Last Slide -->
 				<section data-background="http://i.giphy.com/ohdY5OaQmUmVW.gif">
-						<h2>End.</h2>
+
 				</section>
 
 			</div>
