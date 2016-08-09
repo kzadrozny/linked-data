@@ -75,30 +75,81 @@
 				</section>
 
 				<section>
-					<h2>Internal Data Management</h2>
-					<p>B.I.L.L.I. Bibliographic Identifiers for Library Location Information (http://billi.nypl.org)
-A platform for organizing classmarks used at the New York Public Library. This is available to the public, but similar projects could be useful internal tools as well.</p>
+					<h2 class="smaller">Internal Data Management</h2>
+					<p><strong><a href="http://billi.nypl.org">B.I.L.L.I. Bibliographic Identifiers for Library Location Information</a></strong> | New York Public Library</p>
+						<p><em>Crosswalk unique, homegrown subject heading systems to LC with linked data.</em></p>
+						<hr>
+						<img class="stretch" src="images/billi.png" height="1200" width="1200">
+						<aside class="notes">
+							<p>Classmarks are the number code on the spine label of a book- each classmark represents a subject. For example, in dewey they're numbers, like 700.</p>
+							<p>BILLI includes classmarks in LCC, Billings (a system designed specifically for the NYPL by John Billings, the library’s first director) and “divisions” and “fixed order”, which also seem to be local systems. They pulled data from the library of congress and their own catalog to make this thing- it allowed them to retroactively reclassify the entire catalog with LCC subjects.</p>
+							<p>NYPL didn’t have many LC subject headings in their catalog. But by mapping the classifications to each other in this way they were able to retroactively add them to their catalog on a massive scale.</p>
+							<p>An overview of BILLI: https://www.nypl.org/blog/2016/01/27/nomadic-classification-billi</p>
+						</aside class="notes">
 				</section>
 
 				<section>
-					<h2>Collaborations with Other Institutions</h2>
-					<p>Sheet Music Consortium (http://digital2.library.ucla.edu/sheetmusic/)</p>
+					<h2 class="smaller">Producing Linked Data</h2>
+					<p><strong><a href="http://chroniclingamerica.loc.gov/">Chronicling America</a> | Library of Congress</strong></p>
+						<p><em>Promoting linked data from newspapers for visualizations, mashups, and other projects.</em></p>
+						<hr>
+						<img class="stretch" src="images/chronicling-america.png">
+						<aside class="notes">
+							<p>The National Digital Newspaper Program grew out of the NEH's US Newspaper Program, which was active from 1982-2011. The NDNP is a partnership between the NEH and the Library of Congress. Its long-term goal is to develop an internet-based searchable database of US newspapers with descriptive information and select digitization of historic pages.</p>
+							<p>The Chronicling America project began in 2005. It's a prototype of the digital resource being produced by the National Digital Newspaper Program.</p>
+							<p>This summer, the NEH publcized a challenge to the public, to "create a web-based tool, data visualization, or other creative use of the information found in the Chronicling America historic newspaper database."</p>
+							<p>There is easy to understand documentation about the API at http://chroniclingamerica.loc.gov/about/api</p>
+							<p>See: https://www.challenge.gov/challenge/chronicling-america-historic-american-newspapers-data-challenge/</p>
+						</aside class="notes">
 				</section>
 
 				<section>
-					<h2>Producing Linked Data</h2>
-					<p>Chronicling America (http://chroniclingamerica.loc.gov/)</p>
+					<h2 class="smaller">Consuming Linked Data</h2>
+					<p><strong><a href="http://www.larramendi.es/en/cms/elemento.cmd?id=estaticos%2Fpaginas%2FBiblioteca_Virtual_Ignacio_Larramen.html">Polymath Virtual Library</a> | Fundación Ignacio Larramendi</strong></p>
+					<p><em>Making a virtual collection and adding semantics and links to data from large data aggregators.</em></p>
+					<hr>
+						<img class="stretch" src="images/polymath-virtual-library.png">
+					
+					<aside class="notes">
+						<p>Europeana, and sites like it, collect materials from many different sources and present a unified search for them. the information they provide will become more useful if it is semantically enriched and linked.</p><p>
+						They use the term "polymath" to mean, an author who's work marked an inflection point in its field. This project uses resources from Europeana.</p>
+						<ol>
+							<li>Retrieve data from relevant sources, in different formats.</li>
+							<li>Process author's data for semantic enrichment.</li>
+							<li>Make links to external resources.</li>
+							<li>Generate resources in different formats, including EDM.</li>
+						</ol>
+					</aside class="notes">
 				</section>
 
 				<section>
-					<h2>Consuming Linked Data</h2>
-					<p>Ensemble (http://ensemble.nypl.org)
-Ensemble uses linked data to crowdsource the process of transcribing documents. </p>
+					<h2 class="smaller">Collaborations with Other Institutions</h2>
+					<p><strong><a href="http://digital2.library.ucla.edu/sheetmusic/">Sheet Music Consortium</a> | Collaboration Project</strong></p>
+					<p><em>A collaboration across institutions adds linked data to its portal.</em></p>
+					<hr>
+						<img class="stretch" src="images/sheet-music-consortium.png">
+					<aside class="notes">
+						<p>A collaboration among libraries that lets researchers search several collections at once.</p><p>
+						The original portal for the SMC was launched in 2003 after two years of planning and included UCLA, Indiana University, Johns Hopkins and the Library of Congress. This phase of the project was supported by a Mellon Foundation grant.</p>
+						<p>An IMLS grant in 2007/2008 helped the consortium publicize the project and plan a second generation website, which incorporates the Semantic Web and Linked Open Data. The publicity greatly expanded participation: from approximately 80,000 items in 4 collections to over 200,000 items in 22 collections. Today there are over 350,000 items in 39 collections.</p>
+						<p>In 2013 they launched a Linked Open Data project launched, which focusing on publishers.</p>
+						<p>Review in the Journal of the American Musicological Society: http://jams.ucpress.edu/content/69/1/255</p>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Serendipity</h2>
-					<p>Linked Jazz (https://linkedjazz.org)</p>
+					<h2 class="smaller">Serendipity</h2>
+					<p><strong><a href="https://linkedjazz.org">Linked Jazz</a></strong> | Pratt School of Information Science</p>
+					<p><em>Aiming to reveal the relationships between people, organizations and places in the world of jazz with linked data.</em></p>
+					<hr>
+						<img class="stretch" src="images/linked-jazz.png">
+				
+					<aside class="notes">
+						<p>Jazz is an interesting subject area for this project, because the networks of musicians seem especially interesting. This project helps you discover "connections" in jazz.</p>
+						<p>They give an example of an interview where Eddie Locke is talking about Roy "Little Jazz" Eldridge. Eddie tells a story that involves different jazz musicians and venues. If this is encoded as linked data you can more easily explore the relationships between things.</p>
+						<p>The built a directory of names, and then looked for personal names, corporate names, and geographic locations in interview transcripts. They are trying to build reusable tools to help describe relationships- jazz is just a starting point.</p>
+						<p>See: https://linkedjazz.org/about-the-project/</p>
+					</aside>
 				</section>
 
 				<section data-transition="fade">
@@ -175,37 +226,37 @@ Ensemble uses linked data to crowdsource the process of transcribing documents. 
 				<section>
                     <h2>Prioritize Ideas</h2>
 					
-                    <aside class="notes">
+                    <aside class="notes" class="notes">
             <p>Let's merge the two groups' pile of ideas and we prioritize our projects. One of the simplest ways to do this is to start
 arranging your ideas in two dimensions.</p>
-                    </aside>
+                    </aside class="notes">
                 </section>
 
         <section>
             <img class="stretch" src="images/effort-reward-post-its.png" style="border: none; box-shadow: none;"/>
-          <aside class="notes">
+          <aside class="notes" class="notes">
             <p>You can pick different axis, but here we're
 choosing effort and reward. To start, label four post-it notes "low effort", "high effort",
 "low reward" and "high reward".</p>
-          </aside>
+          </aside class="notes">
         </section>
 
         <section>
             <img class="stretch" src="images/effort-reward-post-its-on-table.png" style="border: none; box-shadow: none;"/>
-            <aside class="notes">
+            <aside class="notes" class="notes">
               <p>Place them on your table like this.</p>
-            </aside>
+            </aside class="notes">
         </section>
 
         <section>
             <img class="stretch" src="images/effort-reward-post-its-with-pages.png" style="border: none; box-shadow: none;"/>
             
-            <aside class="notes">
+            <aside class="notes" class="notes">
               <p>Now, as a group, think about how you'd place the ideas you generated
 into this space. Think roughly about how hard it would be to execute an idea and how
 much value people would get from it. Take 10 minutes to place the ideas where
 they make sense in this space.</p>
-            </aside>
+            </aside class="notes">
         </section>
 				
 
