@@ -40,231 +40,32 @@
 				<!-- Start Read Me Guide: Below are all the different slides and interactions you can create. -->
 				<section>
 					<h2>Linked Data</h2>
-					<h3>Brainstorming Session</h3>
+					<h3>Background Exploration and Goals</h3>
 					<p>
-						<small>John Jung / Kathy Zadrozny</small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Agenda</h2>
-					<table class="table table-striped">
-						<tbody>
-				            <tr>
-				              <td><strong>10:00-10:10</strong> <em>(10 min)</em></td>
-				              <td>Linked Data Environment</td>
-				            </tr>
-				            <tr>
-				              <td><strong>10:10-10:50</strong> <em>(45 min)</em></td>
-				              <td>Generating Ideas</td>
-				            </tr>
-				            <tr>
-				              <td><strong>10:50-11:25</strong> <em>(5 min)</em></td>
-				              <td>How to Evaluate Ideas Using Value and Effort</td>
-				            </tr>
-				            <tr>
-				              <td><strong>10:50-11:25</strong> <em>(25 min)</em></td>
-				              <td>Value and Effort Plotting</td>
-				            </tr>
-				            <tr>
-				              <td><strong>11:25-11:30</strong> <em>(5 min)</em></td>
-				              <td>Homework</td>
-				            </tr>
-			        </tbody>
-                    </table>
-				</section>
-
-				<section>
 					<h2>Current Linked Data Environment</h2>
-					<ul>
-						<li>Internal Data Management</li>
-						<li>Producing Linked Data</li>
-						<li>Consuming Linked Data</li>
-						<li>Collaborations with Other Institutions</li>
-						<li>Serendipity</li>
-					</ul>
-				</section>
+					<ul style="line-height: 1.4em;">
+						<li><strong>Internal Data Management</strong>: New York Public Library<br/>
+						<a href="http://billi.nypl.org">B.I.L.L.I. Bibliographic Identifiers for Library Location Information</a><br/>
+						<small><em>Crosswalk unique, homegrown subject heading systems to LC with linked data.</em></small><br/>&nbsp;</li>
 
-				<section>
-					<h2 class="smaller">Internal Data Management</h2>
-					<p><strong><a href="http://billi.nypl.org">B.I.L.L.I. Bibliographic Identifiers for Library Location Information</a></strong> | New York Public Library</p>
-						<p><em>Crosswalk unique, homegrown subject heading systems to LC with linked data.</em></p>
-						<hr>
-						<img class="stretch" src="images/billi.png" height="1200" width="1200">
-						<aside class="notes">
-							<p>Classmarks are the number code on the spine label of a book- each classmark represents a subject. For example, in dewey they're numbers, like 700.</p>
-							<p>BILLI includes classmarks in LCC, Billings (a system designed specifically for the NYPL by John Billings, the library’s first director) and “divisions” and “fixed order”, which also seem to be local systems. They pulled data from the library of congress and their own catalog to make this thing- it allowed them to retroactively reclassify the entire catalog with LCC subjects.</p>
-							<p>NYPL didn’t have many LC subject headings in their catalog. But by mapping the classifications to each other in this way they were able to retroactively add them to their catalog on a massive scale.</p>
-							<p>An overview of BILLI: https://www.nypl.org/blog/2016/01/27/nomadic-classification-billi</p>
-						</aside class="notes">
-				</section>
+						<li><strong>Producing Linked Data</strong>: Library of Congress<br/>
+						<a href="http://chroniclingamerica.loc.gov/">Chronicling America</a><br/>
+						<small><em>Promoting linked data from newspapers for visualizations, mashups, and other projects.</em></small><br/>&nbsp;</li>
 
-				<section>
-					<h2 class="smaller">Internal Data Management</h2>
-					<p><strong><a href="http://billi.nypl.org">B.I.L.L.I. Bibliographic Identifiers for Library Location Information</a></strong> | New York Public Library</p>
-						<hr>
-						<ul>
-							<li>Linked data helps them solve a local data problem. </li>
-							<li>A website makes the data human-browsable.</li>
-							<li>The dataset is available for others to interact with programmatically.</li>
-							<li>NYPL promotes this project with blog posts, papers, and conference talks.</li>
-						</ul>
-				</section>
+						<li><strong>Consuming Linked Data</strong>: Fundación Ignacio Larramendi<br/>
+						<a href="http://www.larramendi.es/en/cms/elemento.cmd?id=estaticos%2Fpaginas%2FBiblioteca_Virtual_Ignacio_Larramen.html">Polymath Virtual Library</a><br/>
+						<small><em>Making a virtual collection and adding semantics and links to data from large data aggregators.</em></small><br/>&nbsp;</li>
 
-				<section>
-					<h2 class="smaller">Producing Linked Data</h2>
-					<p><strong><a href="http://chroniclingamerica.loc.gov/">Chronicling America</a> | Library of Congress</strong></p>
-						<p><em>Promoting linked data from newspapers for visualizations, mashups, and other projects.</em></p>
-						<hr>
-						<img class="stretch" src="images/chronicling-america.png">
-						<aside class="notes">
-							<p>The National Digital Newspaper Program grew out of the NEH's US Newspaper Program, which was active from 1982-2011. The NDNP is a partnership between the NEH and the Library of Congress. Its long-term goal is to develop an internet-based searchable database of US newspapers with descriptive information and select digitization of historic pages.</p>
-							<p>The Chronicling America project began in 2005. It's a prototype of the digital resource being produced by the National Digital Newspaper Program.</p>
-							<p>This summer, the NEH publcized a challenge to the public, to "create a web-based tool, data visualization, or other creative use of the information found in the Chronicling America historic newspaper database."</p>
-							<p>There is easy to understand documentation about the API at http://chroniclingamerica.loc.gov/about/api</p>
-							<p>See: https://www.challenge.gov/challenge/chronicling-america-historic-american-newspapers-data-challenge/</p>
-						</aside class="notes">
-				</section>
-
-				<section>
-					<h2 class="smaller">Producing Linked Data</h2>
-					<p><strong><a href="http://chroniclingamerica.loc.gov/">Chronicling America</a> | Library of Congress</strong></p>
-						<hr>
-						<ul>
-							<li>Adding linked data is just one improvement to this project over many rounds of improvements.</li>
-							<li>They promote the project and this data to developers and others.</li>
-							<li>The website and people’s experiments with this data are prototypes that the library can use to inform future development.</li>
-						</ul>
-				</section>
-
-				<section>
-					<h2 class="smaller">Consuming Linked Data</h2>
-					<p><strong><a href="http://www.larramendi.es/en/cms/elemento.cmd?id=estaticos%2Fpaginas%2FBiblioteca_Virtual_Ignacio_Larramen.html">Polymath Virtual Library</a> | Fundación Ignacio Larramendi</strong></p>
-					<p><em>Making a virtual collection and adding semantics and links to data from large data aggregators.</em></p>
-					<hr>
-						<img class="stretch" src="images/polymath-virtual-library.png">
-					
-					<aside class="notes">
-						<p>Europeana, and sites like it, collect materials from many different sources and present a unified search for them. the information they provide will become more useful if it is semantically enriched and linked.</p><p>
-						They use the term "polymath" to mean, an author who's work marked an inflection point in its field. This project uses resources from Europeana.</p>
-						<ol>
-							<li>Retrieve data from relevant sources, in different formats.</li>
-							<li>Process author's data for semantic enrichment.</li>
-							<li>Make links to external resources.</li>
-							<li>Generate resources in different formats, including EDM.</li>
-						</ol>
-					</aside class="notes">
-				</section>
-
-				<section>
-					<h2 class="smaller">Consuming Linked Data</h2>
-					<p><strong><a href="http://www.larramendi.es/en/cms/elemento.cmd?id=estaticos%2Fpaginas%2FBiblioteca_Virtual_Ignacio_Larramen.html">Polymath Virtual Library</a> | Fundación Ignacio Larramendi</strong></p>
-					<hr>
-					<ul>
-						<li>Linked data project have a balance between data production and consumption.</li>
-						<li>New relationships and links add value to large source data sets.</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2 class="smaller">Collaborations with Other Institutions</h2>
-					<p><strong><a href="http://digital2.library.ucla.edu/sheetmusic/">Sheet Music Consortium</a> | Collaboration Project</strong></p>
-					<p><em>A collaboration across institutions adds linked data to its portal.</em></p>
-					<hr>
-						<img class="stretch" src="images/sheet-music-consortium.png">
-					<aside class="notes">
-						<p>A collaboration among libraries that lets researchers search several collections at once.</p><p>
-						The original portal for the SMC was launched in 2003 after two years of planning and included UCLA, Indiana University, Johns Hopkins and the Library of Congress. This phase of the project was supported by a Mellon Foundation grant.</p>
-						<p>An IMLS grant in 2007/2008 helped the consortium publicize the project and plan a second generation website, which incorporates the Semantic Web and Linked Open Data. The publicity greatly expanded participation: from approximately 80,000 items in 4 collections to over 200,000 items in 22 collections. Today there are over 350,000 items in 39 collections.</p>
-						<p>In 2013 they launched a Linked Open Data project launched, which focusing on publishers.</p>
-						<p>Review in the Journal of the American Musicological Society: http://jams.ucpress.edu/content/69/1/255</p>
-					</aside>
-				</section>
-
-
-				<section>
-					<h2 class="smaller">Collaborations with Other Institutions</h2>
-					<p><strong><a href="http://digital2.library.ucla.edu/sheetmusic/">Sheet Music Consortium</a> | Collaboration Project</strong></p>
-					<hr>
-					<ul>
-						<li>A long term project, with several rounds of improvements. </li>
-						<li>The collaboration started small and grew over years.</li>
-						<li>This consortium specifically worked to publicize itself to potential collaborators.</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2 class="smaller">Serendipity</h2>
-					<p><strong><a href="https://linkedjazz.org">Linked Jazz</a></strong> | Pratt School of Information Science</p>
-					<p><em>Aiming to reveal the relationships between people, organizations and places in the world of jazz with linked data.</em></p>
-					<hr>
-						<img class="stretch" src="images/linked-jazz.png">
-				
-					<aside class="notes">
-						<p>Jazz is an interesting subject area for this project, because the networks of musicians seem especially interesting. This project helps you discover "connections" in jazz.</p>
-						<p>They give an example of an interview where Eddie Locke is talking about Roy "Little Jazz" Eldridge. Eddie tells a story that involves different jazz musicians and venues. If this is encoded as linked data you can more easily explore the relationships between things.</p>
-						<p>The built a directory of names, and then looked for personal names, corporate names, and geographic locations in interview transcripts. They are trying to build reusable tools to help describe relationships- jazz is just a starting point.</p>
-						<p>See: https://linkedjazz.org/about-the-project/</p>
-					</aside>
-				</section>
-
-				<section>
-					<h2 class="smaller">Serendipity</h2>
-					<p><strong><a href="https://linkedjazz.org">Linked Jazz</a></strong> | Pratt School of Information Science</p>
-					<hr>
-					<ul>
-						<li>This topic area seems especially well-suited to experiments with serendipity.</li>
-						<li>They talk about reusable tools to describe relationships–jazz is just a starting point.</li>
-					</ul>
-				</section>
-
-				<section data-transition="fade">
-					<img src="images/semantic-stack.png" height="611" width="784">
-				</section>
-
-				<section data-transition="fade">
-					<img src="images/semantic-stack-elements.png" height="611" width="784">
-				</section>
-
-
-			<!-- Start Group Session -->
-				<section>
-				<h2>Generate Ideas</h2>
-					<ul>
-						<li>Idea Name</li>
-						<li>Description</li>
-						<li>Target Audience(s)</li>
-						<li>Responsible Department(s)</li>
-						<li>Technically, how?</li>
-						<li>Benefit / Why?</li>
-					</ul>
-				</section>
-
-				<section>
-				<h2>Idea Example</h2>
-					<ul>
-						<li>Idea Name:<br/><strong style="font-size:0.8em;">Translate the Speculum into RDF</strong></li>
-						<li>Description:<br/><strong style="font-size:0.8em;">Provide an RDF view of metadata on the Speculum website. Consider that the data is still being updated by PhD students in the Art History department, and make sure that project stakeholders are interested in these kinds of changes to the project.</strong></li>
-						<li>Target Audience(s):<br/>
-							<strong>
-							<ul style="font-size:0.8em;">
-								<li>Researchers interested in using this type of data in their work.</li>
-								<li>Developers at other institutions with collections of these prints.</li>
-								<li>Other institutions interested in learning about linked data (through talks, conferences, etc.)</li>
-							</ul>
-							</strong>
-						</li>
-						<li>Responsible Department(s):<br/>
-							<strong>
-							<ul style="font-size:0.8em;">
-								<li>Department of Art History</li>
-								<li>Visual Resources Center</li>
-								<li>Digital Library Development Center</li>
-							</ul>
-							</strong>
-						</li>
-						<li>Technically, how:<br/><strong style="font-size:0.8em;">The project metadata is in XML (VRACore) for approximately 1000 prints.  How feasible is it to either translate this data to RDF or provide an RDF translation on the-fly? How to create RDF for things like references to the Getty Art and Architecture Thesaurus?</strong></li>
-						<li>Benefit / Why?<br/><strong style="font-size:0.8em;">The project seems to be an appropriate size. It could be a jumping off point that could lead to other work- collaborations with other institutions, or consuming linked data from other sources that relate to this project, etc.</strong></li>
+						<li><strong>Collaborations with Other Institutions</strong>: Includes UCLA, Indiana University, Johns Hopkins, and the Library of Congress<br/>
+						<a href="http://digital2.library.ucla.edu/sheetmusic/">Sheet Music Consortium</a><br/>
+						<small><em>A collaboration across institutions adds linked data to its portal.</em></small><br/>&nbsp;</li>
+						<li><strong>Serendipity</strong>: Pratt School of Information Science<br/>
+						<a href="https://linkedjazz.org">Linked Jazz</a><br/>
+						<small><em>Aiming to reveal the relationships between people, organizations and places in the world of jazz with linked data.</em></small><br/>&nbsp;</li>
 					</ul>
 				</section>
 
@@ -294,8 +95,27 @@
 				</section>
 
 				<section>
-				<h2>Brainstorming</h2>
-				<p><strong><em>End at 10:50</em></strong></p>
+				<h2>Goals</h2>
+					<ul>
+						<li>Get our feet wet</li>
+						<li>Start with a small database</li>
+						<li>Ideally clean data</li>
+						<li>Expand what we know to larger dataset</li>
+					</ul>
+				</section>
+
+
+				<section data-transition="fade">
+					<img src="images/semantic-stack.png" height="611" width="784">
+				</section>
+
+				<section data-transition="fade">
+					<img src="images/semantic-stack-elements.png" height="611" width="784">
+				</section>
+				
+
+				<section>
+				<h2>Generate Ideas &amp; Brainstorming</h2>
 					<div class="col-xs-6">
 					<h3>Outline Ideas</h3>
 					<ul>
@@ -304,7 +124,7 @@
 						<li>Target Audience(s)</li>
 						<li>Responsible Department(s)</li>
 						<li>Technically, how?</li>
-						<li>Main Takeaway</li>
+						<li>Benefit / Main Takeaway</li>
 					</ul>
 				</div>
 				<div class="col-xs-6">
@@ -321,44 +141,13 @@
 
 				<section>
                     <h2>Prioritize Ideas</h2>
-					
-                    <aside class="notes" class="notes">
-            <p>Let's merge the two groups' pile of ideas and we prioritize our projects. One of the simplest ways to do this is to start
-arranging your ideas in two dimensions.</p>
-                    </aside class="notes">
+					 <img class="stretch" src="images/effort-reward-post-its-with-pages.png" style="border: none; box-shadow: none;"/>
                 </section>
 
-        <section>
-            <img class="stretch" src="images/effort-reward-post-its.png" style="border: none; box-shadow: none;"/>
-          <aside class="notes" class="notes">
-            <p>You can pick different axis, but here we're
-choosing effort and reward. To start, label four post-it notes "low effort", "high effort",
-"low reward" and "high reward".</p>
-          </aside class="notes">
-        </section>
-
-        <section>
-            <img class="stretch" src="images/effort-reward-post-its-on-table.png" style="border: none; box-shadow: none;"/>
-            <aside class="notes" class="notes">
-              <p>Place them on your table like this.</p>
-            </aside class="notes">
-        </section>
-
-        <section>
-            <img class="stretch" src="images/effort-reward-post-its-with-pages.png" style="border: none; box-shadow: none;"/>
-            
-            <aside class="notes" class="notes">
-              <p>Now, as a group, think about how you'd place the ideas you generated
-into this space. Think roughly about how hard it would be to execute an idea and how
-much value people would get from it. Take 10 minutes to place the ideas where
-they make sense in this space.</p>
-            </aside class="notes">
-        </section>
 				
 
 		<section>
 			<h2>Factors for Evaluation</h2>
-			<p><strong><em>End at 11:25</em></strong></p>
 			<ul>
 				<li>Organizational value (match with Library strategy)</li>
 				<li>Technical value (reusability to other projects)</li>
@@ -370,27 +159,15 @@ they make sense in this space.</p>
 
 		<section>
 			<h2>Results</h2>
+			<h3>Voted down to one project: MEPA</h3>
 			<ul>
-				<li>Vote down to one project</li>
-				<li>Make a priority list of projects</li>
-				<li>Snapshot: High level view of project options</li>
+				<li>Small image database</li>
+				<li>Well curated data</li>
+				<li>Flexibility in staging data levels</li>
+				<li>High use collection that is &#8220;invisible&#8221;</li>
+				<li>Experience to expand to other data objects</li>
 			</ul>
 		</section>
-
-       <section>
-          <h2>Homework</h2>
-          <ul>
-			<li>Refine an idea you made today 
-				- OR - Choose a new project from the list</li>
-			<li>Generate ideas with deliverables</li>
-			<li>Bring ideas to next meeting</li>
-		</ul>
-        </section>
-
-			<!-- Last Slide -->
-				<section data-background="http://i.giphy.com/ohdY5OaQmUmVW.gif">
-
-				</section>
 
 			</div>
 		<!-- End Slides -->
